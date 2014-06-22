@@ -85,7 +85,7 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 #### Via telnet
 
-- Nem todos os sistemas permitem o uso de SHH, sendo assim será necessário o uso do telnet.
+- Nem todos os sistemas permitem o uso de SSH, sendo assim será necessário o uso do telnet.
 - Não realiza a encriptação de dados durante a sessão (local <-> remoto).
 - Outra diferença é que o telnet vai abrir um prompt para que seja inserido o _username_ e _password_.
 - Nem sempre o `telnet` sabe que
