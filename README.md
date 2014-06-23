@@ -32,7 +32,7 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 - Camada de nível mais baixo do Unix.
 - Controla processos, dispositivos de entrada/saída, operações de arquivos do sistema e outras funções necessárias para a operação do sistema.
-- Contruído para um hardware específico.
+- Construído para um hardware específico.
 - Não pode ser manuseado pelo usuário (geralmente)
 - Facilita a criação e gerenciamento de processos (muitas vezes chamados de _jobs_ ou _tasks_).
 - O Kernel manuseia a memória do sistema. Quando um processo é iniciado, mas a memória física não oferece mais suporte para a execução desta tarefa, a memória virtual entra em ação para acomodar este processo, movendo algumas partes para o disco rígido. Quando esta mesma porção é solicitada novamente, ela retorna para a memória física. Este procedimento é chamado de _paging_.
@@ -85,7 +85,7 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 #### Via telnet
 
-- Nem todos os sistemas permitem o uso de SHH, sendo assim será necessário o uso do telnet.
+- Nem todos os sistemas permitem o uso de SSH, sendo assim será necessário o uso do telnet.
 - Não realiza a encriptação de dados durante a sessão (local <-> remoto).
 - Outra diferença é que o telnet vai abrir um prompt para que seja inserido o _username_ e _password_.
 - Nem sempre o `telnet` sabe que
@@ -107,6 +107,22 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 **Em progresso**
 
 ## Arquivos do Sistema
+
+- Componente do Unix que habilita a visualização, organização segurança e interação de arquivos e diretórios.
+- Existem 3 (três) tipos de _file systems_: orientado a disco, orientado a rede e virtual.
+- Orientado a Disco (_disk-oriented_): arquivos do disco rígido, CD-ROM, DVD, USB. Por exemplo: UFS, FAT, NTFS.
+- Orientado a Rede (_network-oriented_): arquivos que podem ser acessados por um ambiente remoto. Por exemplo: NFS, Samba e WebDAV.
+- Especial: arquivos temporários e de processo.
+
+### Aspectos Básicos
+
+- Uma coleção lógica de arquivos em uma partição no disco.
+- Uma partição é, por sua vez, um _container_ de informações.
+- No Unix, tudo se inicia a partir do diretório _root_ (este diretório não deve ser confundido com o diretório _root_ do usuário).
+- O Unix utiliza uma estrutura hierarquica.
+- O UNIX trabalha com camnhos relativos e absolutos, além de ser Case Sensitivity.
+
+### Navegação
 
 **Em progresso**
 
@@ -141,3 +157,10 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 ## Utilidades para UNIX Admins
 
 **Em progresso**
+
+
+
+
+
+
+
