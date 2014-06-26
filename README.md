@@ -148,7 +148,16 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 ## Segurança
 
-**Em progresso**
+* Hardening SSH - Configurações feitas no `/etc/ssh/sshd_config` 
+  1. Não permitir login diretamente pelo usuário root: `PermitRootLogin no`
+  2. Usar separação de privilégios durante execução: `UsePrivilegeSeparation yes`
+  3. Limitar acesso a usuários ou grupos: `AllowUsers root admin` ou `AllowGroup admins`
+  4. Alterar porta padrão: `Port 1234`
+  5. Limitar tempo de inatividade do login: `LoginGraceTime 1m`
+
+Referências:  
+1. [Diego Ramos](http://blog.diegoramos.me/linux/fortalecendo-ssh/)  
+2. [rackaid](http://www.rackaid.com/blog/how-to-harden-or-secure-ssh-for-improved-security/)    
 
 ## Shell Script
 
@@ -156,7 +165,7 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 ## Utilidades para UNIX Admins
 
-**Em progresso**
+- Usuários logados: `w` ou `who`
 
 
 
