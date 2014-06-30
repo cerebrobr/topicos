@@ -41,9 +41,9 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 ### Shell
 
 - É o interpretador da linha de comando.
-- Reponsável por permitir a interação entre o usuário e as operaçõs no sistema.
+- Reponsável por permitir a interação entre o usuário e as operações no sistema.
 - Existem três shells primários: Bourne Shell (conhecido como _sh_), C Shell (_csh_) e Korn Shell (_ksh_).
-- Não somente, existem outras variantes para o Shell. Utilize a que estiver mais adequada par as suas necessidades.
+- Não somente, existem outras variantes para o Shell. Utilize a que estiver mais adequada para as suas necessidades.
 
 ### Componentes
 
