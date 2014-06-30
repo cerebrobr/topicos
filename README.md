@@ -222,6 +222,7 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 	```
 	$ touch README.md 		# cria o arquivo README.md
 	```
+
 ## Ferramentas
 
 **Em progresso**
