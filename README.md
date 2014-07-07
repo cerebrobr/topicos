@@ -86,8 +86,11 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 #### Via telnet
 
 - Nem todos os sistemas permitem o uso de SSH, sendo assim será necessário o uso do telnet.
+- Diferente do _SSH_ a sintaxe mínima do _telnet_ é: ````<command> <address> <port>````. Ex: ````telnet 192.168.0.1 8080````.
+- O campo ````address```` não se refere somente a um _endereço_ _de_ _IP_, podendo ser também um _domain_ _name_, por ex: ````telnet google.com 80````.
 - Não realiza a encriptação de dados durante a sessão (local <-> remoto).
 - Outra diferença é que o telnet vai abrir um prompt para que seja inserido o _username_ e _password_.
+- Permite o envio de requisições na rede, como por exemplo uma requisição _HTTP_. Ex: ````telnet google.com 80 GET / HTTP/1.1````
 - Nem sempre o `telnet` sabe que
 
 ### Finalizar/desligar o sistema
