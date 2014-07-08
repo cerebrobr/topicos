@@ -1,4 +1,4 @@
-# UNICS
+# Unix
 
 Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos.
 
