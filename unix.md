@@ -135,7 +135,98 @@ Um documento para o aprendizado do Sistema Operacional Unix com base em tópicos
 
 ## Comandos do UNIX
 
-**Em progresso**
+- `ls` - listar o conteúdo do diretório
+
+	```
+	$ ls -la 		# -l para listagem longa e -a para exibir todos os arquivos, incluindo os ocultos
+	```
+- `cd <path>` - mudar de diretório (change directory)
+
+	```
+	$ cd ..			# muda para o diretório pai
+	$ cd .			# muda para o diretório atual
+	$ cd			# ou
+	$ cd ~			# muda para o diretório home do usuário atual
+	$ cd /var/www	# muda para o diretório /var/www
+	$ cd -			# volta para o diretório anterior, neste caso, ~
+	```
+- `pwd` - exibir o caminho do diretório atual (print working directory)
+
+	```
+	$ pwd
+	/var/www/my-awesome-project
+	```
+- `history`, `!!` e `!101` - exibir o histórico de comandos e executar comandos do histórico
+
+	```
+	$ history		# exibe o histórico de comandos
+	100 cd ~
+	101 pwd
+	102 ls -la
+	$ !!			# executa o último comando, neste caso, ls -la
+	$ !101			# executa o comando de número 101 da lista, neste caso, pwd
+	```
+- `mkdir` - criar diretórios (make directories)
+
+	```
+	$ mkdir project 		# cria o diretório project
+	```
+- `cp` - copiar arquivos e diretórios (copy)
+
+	```
+	$ cp file.txt mydir		# copia o arquivo para o diretório
+	```
+- `mv` - mover (ou renomear) arquivos e diretórios (move)
+
+	```
+	$ mv file.txt mydir				# move o arquivo para o diretório
+	$ mv oldname.txt newname.txt	# renomeia o arquivo
+	```
+- `man` - exibir a documentação/manual dos comandos (manual)
+
+	```
+	$ man ls		# exibe o manual do comando ls
+	$ man history	# exibe o manual do comando history
+	$ man pwd		# exibe o manual do comando pwd
+	```
+- `cat` - concatenar e exibir arquivos (concatenate)
+
+	```
+	$ cat file1.txt file2.txt
+	content fom file1
+	content fom file2
+	```
+- `head` - exibir as primeiras linhas do arquivo
+
+	```
+	$ head file1.txt			# exibe as primeiras 10 linhas por padrão
+	line1
+	...
+	line10
+
+	$ head -n 20 file1.txt		# exibe as primeiras 20 linhas
+	line1
+	...
+	line20
+	```
+- `tail` - exibir as últimas linhas do arquivo
+
+	```
+	$ tail file1.txt			# exibe as últimas 10 linhas por padrão
+	line90
+	...
+	line99
+
+	$ tail -n 20 file1.txt		# exibe as últimas 20 linhas
+	line80
+	...
+	line99
+	```
+- `touch` - criar arquivo
+
+	```
+	$ touch README.md 		# cria o arquivo README.md
+	```
 
 ## Ferramentas
 
